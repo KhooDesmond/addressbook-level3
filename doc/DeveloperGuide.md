@@ -75,6 +75,27 @@ Use case ends.
 
 > 3a1. AddressBook shows an error message <br>
   Use case resumes at step 2
+  
+  
+#### Use case: Edit tag of a person
+
+**MSS**
+
+1. User requests to change a tag to another name
+2. AddressBook prompt user to confirm the changes, showing old tag and new tag
+3. User confirms the changes
+4. AddressBook make the requested change to the tag and updates
+Use case ends.
+
+**Extensions**
+
+2a. The requested tag to be changed does not exists
+
+> Use case ends
+
+3a. User deny the changes
+
+> Use case ends
 
 ## Appendix C : Non Functional Requirements
 
