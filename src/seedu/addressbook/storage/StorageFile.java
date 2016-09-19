@@ -78,9 +78,6 @@ public class StorageFile implements Storage {
         return filePath.toString().endsWith(".txt");
     }
 
-    /* (non-Javadoc)
-     * @see seedu.addressbook.storage.Storage#save(seedu.addressbook.data.AddressBook)
-     */
     @Override
     public void save(AddressBook addressBook) throws StorageOperationException {
 
@@ -102,9 +99,6 @@ public class StorageFile implements Storage {
         }
     }
 
-    /* (non-Javadoc)
-     * @see seedu.addressbook.storage.Storage#load()
-     */
     @Override
     public AddressBook load() throws StorageOperationException {
         try (final Reader fileReader =
@@ -139,9 +133,6 @@ public class StorageFile implements Storage {
         }
     }
 
-    /* (non-Javadoc)
-     * @see seedu.addressbook.storage.Storage#getPath()
-     */
     @Override
     public String getPath() {
         return path.toString();

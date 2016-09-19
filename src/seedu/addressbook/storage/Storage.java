@@ -7,18 +7,17 @@ import seedu.addressbook.storage.StorageFile.StorageOperationException;
  * Represents the storage used to store AddressBook 
  *     
  */
-
 public interface Storage {
 
     /**
-     * Saves all data to this storage file.
+     * Saves all data to this storage.
      *
      * @throws StorageOperationException if there were errors converting and/or storing data to file.
      */
     void save(AddressBook addressBook) throws StorageOperationException;
 
     /**
-     * Loads data from this storage file.
+     * Loads data from this storage.
      *
      * @throws StorageOperationException if there were errors reading and/or converting data from file.
      */
